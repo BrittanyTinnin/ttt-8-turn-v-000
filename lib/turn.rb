@@ -30,6 +30,6 @@ def turn(board)
   if !valid_move?(board, index)
     turn(board)
   end
-  move(board, index, value)
+  move(board, index)
   display_board(board)
 end
