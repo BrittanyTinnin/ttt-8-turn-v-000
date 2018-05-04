@@ -28,7 +28,7 @@ def turn(board)
   index = input_to_index(input)
   valid_move?(board, index)
   if !valid_move?(board, index)
-    return false
+    return true
   else
     valid_move?(board,index)
   end
