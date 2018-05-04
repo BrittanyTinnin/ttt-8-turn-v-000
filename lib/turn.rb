@@ -27,6 +27,8 @@ def turn(board)
   puts input = gets.strip
   index = input_to_index(input)
   valid_move?(board, index)
-
+  loop do
+    if valid_move?(board, index)
+      return false
   display_board(board)
 end
